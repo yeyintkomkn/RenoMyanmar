@@ -1,0 +1,1 @@
+<h1>Please Wait about 24 hr :)</h1>
