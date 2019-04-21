@@ -130,8 +130,17 @@ class CompanyData
             array_push($suggest_arr,$suggest_company);
         }
         $result = array_unique($suggest_arr);
+        $result_array=[];
+        if(count($result)>5){
+            for ($i=0;$i<5;$i++){
+                array_push($result_array,$result[$i]);
+            }
+        }
+        else{
+            $result_array=$result;
+        }
 //        return $result;
-        $this->suggest_company_arr = $result;
+        $this->suggest_company_arr = $result_array;
     }
     /**
      * @param mixed $feedback_arr
@@ -172,7 +181,13 @@ class CompanyData
      */
     protected function setCompanyInfoArr($company_info_arr)
     {
-        $company_info_arr['photo_url']=RenoMyanmar::$domain_url."upload/company_logo/".$company_info_arr->photo;
+        if ($company_info_arr->photo=="nologo.png"){
+            $company_info_arr['photo_url']=RenoMyanmar::$domain_url."upload/no_image_default.png";
+        }
+        else{
+            $company_info_arr['photo_url']=RenoMyanmar::$domain_url."upload/company_logo/".$company_info_arr->photo;
+        }
+
 
         $company_id=$company_info_arr['id'];
         $arr=Top_company::where('company_id',$company_id)->get();

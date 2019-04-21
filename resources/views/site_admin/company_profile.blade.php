@@ -1,7 +1,8 @@
 @extends('layouts.site_admin.site_admin_design')
 @section('css')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
     {{--<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/css/mdb.min.css" rel="stylesheet">--}}
     {{--<link href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css">--}}
     <style>
@@ -170,7 +171,7 @@
                 <div class="row">
                         <div class="col-md-4">
                             <div class="card" id="next_under">
-                                <div class="card-header">
+                                <div class="card-header card-header-primary">
                                     Add New Category
                                 </div>
                                 <form id="insert_form" class="card-body" action="" method="post">
@@ -214,52 +215,50 @@
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-5 card">
-                                    <div class="">
-                                        <div>
-                                            <h3>
-                                                &nbsp;Main Category
-                                            </h3>
-                                            <table id="maindatatable" class="table table-bordered table-hover">
-                                                <thead>
+                                    <div class="card-header card-header-primary">
+                                        <h5>
+                                            &nbsp;Main Category
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <table id="maindatatable" class="table table-bordered table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Category</th>
+                                                <th>Control</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+
+
+
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 card ml-2">
+                                    <div class="card-header card-header-primary">
+                                        <h5 id="title">
+                                            &nbsp;Sub Category
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <table id="subdatatable" class="table table-bordered table-hover">
+                                            <thead>
                                                 <tr>
                                                     <th>No</th>
                                                     <th>Category</th>
+                                                    <th>Logo</th>
                                                     <th>Control</th>
                                                 </tr>
-                                                </thead>
-                                                <tbody>
+                                            </thead>
+                                            <tbody>
 
-                                                </tbody>
-
-
-
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 card ml-2">
-                                    <div class="">
-                                        <div>
-                                            <h3 id="title">
-                                                &nbsp;Sub Category
-                                            </h3>
-                                            <table id="subdatatable" class="table table-bordered table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Category</th>
-                                                        <th>Logo</th>
-                                                        <th>Control</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-
-                                                </tbody>
-
-
-
-                                            </table>
-                                        </div>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -400,7 +399,6 @@
                     contentType: false,
                     processData: false,
                     success: function(data_return) {
-                        var aaa="aaa";
                         var data_list=JSON.parse(data_return);
                         main_category_t.clear().draw();
                         var no=1;
@@ -408,7 +406,14 @@
                             main_category_t.row.add( [
                                 (no++),
                                 data_list[i].category_name,
-                                '<button class="btn btn-sm btn-danger" onclick="delete_main_list('+data_list[i].id+')">Delete</button>'
+                                '<button type="button" class="btn btn-sm btn-primary btn-link" title rel="tooltip" data-original-title="delete" onclick="show_edit_main('+data_list[i].id+','+data_list[i].category_name+')">' +
+                                '<i class="material-icons">edit</i>' +
+                                '</button>'+
+                                '<button type="button" class="btn btn-sm btn-danger btn-link" title rel="tooltip" data-original-title="delete" onclick="delete_main_list('+data_list[i].id+')">' +
+                                '<i class="material-icons">close</i>' +
+                                '</button>'
+
+//                                '<i class="material-icons" onclick="delete_main_list('+data_list[i].id+')">close</i>'
 
                             ] ).draw( false );
                         }
@@ -439,6 +444,10 @@
                         }
                     }
                 });
+            }
+
+            show_edit_main=(id,name)=>{
+                console.log(name);
             }
 
             delete_main_list=function (id) {

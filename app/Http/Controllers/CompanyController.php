@@ -60,13 +60,13 @@ class CompanyController extends Controller
 
             if($password==$retype_password){
 //                return $company_name.'<br>'.$phone.'<br>'.$email.'<br>'.$password;
-                Company::create([
+                $company=Company::create([
                     'company_name'=>$company_name,
                     'phone'=>$phone,
                     'email'=>$email
-                ]);
+                ])->id;
 
-                $company=Company::where('email',$email)->first();
+//                $company=Company::where('email',$email)->first();
                 //return $company->id;
                 User::create([
                     'company_id'=>$company->id,
@@ -84,13 +84,22 @@ class CompanyController extends Controller
         if ($request->isMethod('get')){
             $login_company_id=session('login_company_id');
 
-            $companies=View_user_company::findOrFail($login_company_id);
-            $company_obj=new CompanyData($companies->id);
+//            $companies=Company::findOrFail($login_company_id);
+            $company_obj=new RealCompanyData($login_company_id);
             $company_data=$company_obj->getCompanyInfoArr();
+            $company_category=$company_obj->getCategoriesArr();
 
+            $sub_categories=Sub_category::all();
+            $main_categories=Main_category::all();
+
+//            return $company_category;
             return view('company_admin.company_profile')->with([
                 'url'=>'company_profile',
                 'company_profile'=>$company_data,
+
+                'main_categories'=>$main_categories,
+                'sub_categories'=>$sub_categories,
+                'company_categories'=>$company_category
             ]);
         }
         else{
@@ -141,9 +150,20 @@ class CompanyController extends Controller
             }
 
 
-            return redirect('company/company_profile')->with('success_msg','Success Adding New Sub Category');
+            return redirect('company/company_profile')->with('success_msg','Updating Success...');
 //            return view('company.edit_company_profile')->with(array('main_categories'=>$main_categories,'sub_categories'=>$sub_categories,'company_profile'=>$company_profile,'selected_category'=>$selected_category));  ;
         }
+    }
+
+    function edit_company_type(Request $request){
+        $company_types=$request->get('company_type');
+        $login_company_id=session('login_company_id');
+        Sub_category_company::where('company_id',$login_company_id)->delete();
+//        Sub_category_company::create()
+        foreach ($company_types as $data){
+            Sub_category_company::create(['company_id'=>$login_company_id,'subcategory_id'=>$data]);
+        }
+        return redirect('company/company_profile')->with('success_msg','Updating Success...');
     }
 
     function edit_company_by_admin(Request $request){
@@ -621,37 +641,37 @@ class CompanyController extends Controller
 
         if(isset($company_name) && isset($main_category_id) && isset($location)){
 //            echo "name , main_category , location";
-            $company=View_user_company::where('company_name', 'like', '%'.$company_name.'%')->where('location',$location)->get();
+            $company=View_user_company::where('company_name', 'like', '%'.$company_name.'%')->where('location',$location)->paginate(10);
             $company_arr=CompanyData::sort_companies_by_companytype($company);
             $company_data=$this->get_company_data($company_arr,$main_category_id);
         }
         else if(isset($company_name) && isset($main_category_id)){
 //            echo "name , main_category ";
-            $company=View_user_company::where('company_name', 'like', '%'.$company_name.'%')->get();
+            $company=View_user_company::where('company_name', 'like', '%'.$company_name.'%')->paginate(10);
             $company_arr=CompanyData::sort_companies_by_companytype($company);
             $company_data=$this->get_company_data($company_arr,$main_category_id);
         }
         else if(isset($main_category_id) && isset($location)){
 //            echo " main_category , location";
-            $company=View_user_company::where('location',$location)->get();
+            $company=View_user_company::where('location',$location)->paginate(10);
             $company_arr=CompanyData::sort_companies_by_companytype($company);
             $company_data=$this->get_company_data($company_arr,$main_category_id);
         }
         else if(isset($company_name) && isset($location)){
 //            echo "name , location";
-            $company=View_user_company::where('company_name', 'like', '%'.$company_name.'%')->where('location',$location)->get();
+            $company=View_user_company::where('company_name', 'like', '%'.$company_name.'%')->where('location',$location)->paginate(10);
             $company_arr=CompanyData::sort_companies_by_companytype($company);
             $company_data=$this->get_company_data($company_arr,$main_category_id);
         }
         else if(isset($main_category_id)){
 //            echo " main_category";
-            $company=View_user_company::all();
+            $company=View_user_company::paginate(10);
             $company_arr=CompanyData::sort_companies_by_companytype($company);
             $company_data=$this->get_company_data($company_arr,$main_category_id);
         }
         else if(isset($company_name)){
 //            echo "name";
-            $company=View_user_company::where('company_name', 'like', '%'.$company_name.'%')->get();
+            $company=View_user_company::where('company_name', 'like', '%'.$company_name.'%')->paginate(10);
             $company_arr=CompanyData::sort_companies_by_companytype($company);
             $company_data=$this->get_company_data($company_arr,$main_category_id);
         }
@@ -662,7 +682,7 @@ class CompanyController extends Controller
 //            $free_company=View_user_company::where('type','free')->where('location',$location)->get();
 //
 //            $company_data=$this->get_company_data($paid_company,$free_company,$main_category_id);
-            $company=View_user_company::where('location',$location)->get();
+            $company=View_user_company::where('location',$location)->paginate(10);
             $company_arr=CompanyData::sort_companies_by_companytype($company);
             $company_data=$this->get_company_data($company_arr,$main_category_id);
 
@@ -670,7 +690,7 @@ class CompanyController extends Controller
         }
         else{
 //            echo "nothing";
-            $company=View_user_company::all();
+            $company=View_user_company::paginate(10);
             $company_arr=CompanyData::sort_companies_by_companytype($company);
             $company_data=$this->get_company_data($company_arr,$main_category_id);
 
@@ -690,7 +710,8 @@ class CompanyController extends Controller
             'sub_categories'=>$sub_categories,
             'ads'=>$home_ads,
             'latest_blog'=>$latest_blog,
-            'site_profile'=>$site_profile
+            'site_profile'=>$site_profile,
+            'paginate'=>$company
         ]);
     }
 

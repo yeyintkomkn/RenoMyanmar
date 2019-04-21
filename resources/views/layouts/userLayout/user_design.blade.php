@@ -11,7 +11,7 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="{{url('css/frontend_css/plug_in.css')}}">
-
+    {{--icon--}}
     <link rel="shortcut icon" href="{{asset('images/frontend_images/reno_myanmar.png')}}">
     <!-- Custom style -->
 

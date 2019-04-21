@@ -16,10 +16,11 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::check()==false) {
+        $user = Auth::user();
+        $id=$user['company_id'];
+        if (Auth::check()==false || $id!=0) {
             return redirect('/');
         }
-
         return $next($request);
     }
 }

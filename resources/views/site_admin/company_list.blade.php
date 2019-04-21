@@ -687,10 +687,11 @@
                     contentType: false,
                     processData: false,
                     success: function(result) {
-                        console.log(result);
+//                        console.log(result);
                         load_pending_data();
                         load_activated_data("all_company");
                         $('#myModal_edit').modal('hide');
+                        $('#update_photo_new').val("");
                     },
                 });
             });

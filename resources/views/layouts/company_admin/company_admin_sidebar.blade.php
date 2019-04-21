@@ -6,8 +6,14 @@
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
+            <style>
+                a.disabled {
+                    pointer-events: none;
+                    cursor: default;
+                }
+            </style>
             <li class="nav-item @if($url=="dashboard") active @endif">
-                <a class="nav-link" href="{{url('company/company_dashboard')}}">
+                <a class="nav-link @if($company_profile['verify']==0) disabled @endif" href="{{url('company/company_dashboard')}}">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
                 </a>
@@ -20,13 +26,13 @@
                 </a>
             </li>
             <li class="nav-item @if($url=="photo") active @endif">
-                <a class="nav-link" href="{{url('company/photo')}}">
+                <a class="nav-link @if($company_profile['verify']==0) disabled @endif" href="{{url('company/photo')}}">
                     <i class="material-icons">photo</i>
                     <p>Photo</p>
                 </a>
             </li>
             <li class="nav-item @if($url=="feedback") active @endif">
-                <a class="nav-link" href="{{url('company/company_feedback')}}">
+                <a class="nav-link @if($company_profile['verify']==0) disabled @endif" href="{{url('company/company_feedback')}}">
                     <i class="material-icons">feedback</i>
                     <p>Feedback</p>
                 </a>

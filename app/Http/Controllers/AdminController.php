@@ -43,10 +43,11 @@ class AdminController extends Controller
 
 //                    echo json_encode($company_data['verify']);
                     if($company_data['verify']===0){
-                        return redirect('message')->with([
-                            'msg_title'=>'Sorry!',
-                            'msg'=>'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem',
-                        ]);
+                        return redirect('company/company_profile')->with('error_msg','Please Enter Your Information and wait 24 hr...');
+//                        return redirect('message')->with([
+//                            'msg_title'=>'Sorry!',
+//                            'msg'=>'Please Wait 24 hr ... bla bla bla',
+//                        ]);
                     }
                     else{
                         return redirect('/company/company_dashboard');

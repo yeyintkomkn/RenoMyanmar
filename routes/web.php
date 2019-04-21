@@ -61,6 +61,8 @@ Route::group(['middleware'=>['auth']],function(){
     Route::get('/delete_employee_from_company/{company_id}/{employee_id}','EmployeeController@delete_employee_from_company');
 
     Route::match(['get','post'],'/company/company_profile','CompanyController@edit_company_profile');
+    Route::match(['get','post'],'/company/edit_company_type','CompanyController@edit_company_type');
+
     Route::match(['get','post'],'/edit_company_category','CompanyController@edit_company_category');
 //--------------------------------------------------------------------------------------------------------
 //    admin permission

@@ -9,6 +9,9 @@
             <div class="row">
                 <div class="col-md-8">
                     {{--start loop--}}
+                    @if(count($companies)==0)
+                        <h2>No Search Result!...</h2>
+                        @endif
                     @foreach($companies as $company)
                         <div class="item-click">
                             <article>

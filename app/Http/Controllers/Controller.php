@@ -107,14 +107,6 @@ class Controller extends BaseController
                 'msg_title'=>'Thank You!',
                'msg'=>'orem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt',
             ]);
-//            return view('user.show_message')->with([
-//                'main_categories'=>$main_categories,// to show in header
-//                'sub_categories'=>$sub_categories,
-//                'latest_blog'=>$latest_blog,
-//                'site_profile'=>$site_profile,
-//                'msg_title'=>'Thank You!',
-//                'msg'=>'orem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt',
-//            ]);
         }
         else{
             return view('user.contact')->with([

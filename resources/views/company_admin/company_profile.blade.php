@@ -17,16 +17,27 @@
 @section('content')
     <div class="content">
         <div class="container-fluid">
-            @if(Session::has('success_msg'))
-                <div class="row">
-                    <div class="col-md-12">
-                        <p style="color:#9B34B2">{{ session('success_msg') }}</p>
-                    </div>
+            <h2 class="text text-center">
+                @if(Session::has('success_msg'))
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="color:#9B34B2">{{ session('success_msg') }}</p>
+                        </div>
 
-                </div>
-            @endif
+                    </div>
+                @endif
+                @if(Session::has('error_msg'))
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="color:red">{{ session('error_msg') }}</p>
+                        </div>
+
+                    </div>
+                @endif
+            </h2>
+
             <div class="row">
-                <div class="col-md-8 offset-md-2 main_br_input">
+                <div class="col-md-10 offset-md-1 main_br_input">
                     <div class="card">
                         <div class="card-header card-header-primary">
                             <h4 class="card-title">Edit Profile</h4>
@@ -121,7 +132,65 @@
                                         </div>
                                     </div>
                                 </div>
+
+
+
                                 <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 offset-md-1 main_br_input">
+                    <div class="card">
+                        <div class="card-header card-header-primary">
+                            <h4 class="card-title">Edit Company Type</h4>
+                            <p class="card-category">Choose Company Type</p>
+                        </div>
+                        <div class="card-body">
+                            <form action="{{url('/company/edit_company_type')}}" enctype="multipart/form-data" method="post">
+                                {{csrf_field()}}
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <?php
+                                                function check_com_type($id,$company_selected_type){
+                                                    foreach ($company_selected_type as $type){
+                                                        if($type['sub_category_id']==$id){
+                                                            return true;
+                                                            break;
+                                                        }
+                                                    }
+                                                }
+                                                ?>
+                                                @for($i=0;$i<3;$i++)
+
+                                                    <div class="col-md-4">
+                                                        <h5>{{$main_categories[$i]->category_name}}</h5>
+                                                        {{--<ul class="list">--}}
+                                                        @foreach($sub_categories as $data)
+                                                            @if($data->main_category_id==$main_categories[$i]->id)
+                                                                {{--                                                            <li><a href="{{url('category_company/'.$data->id)}}">{{$data->category_name}}</a></li>--}}
+                                                                {{--<li><input type="checkbox" value="{{$data->id}}" id="type{{$data->id}}">{{$data->category_name}}</li>--}}
+                                                                <input type="checkbox" style="margin:0" name="company_type[]" value="{{$data->id}}" id="company_type{{$data->id}}" @if(check_com_type($data->id,$company_categories)) checked @endif> <label for="company_type{{$data->id}}"> {{$data->category_name}}</label> &nbsp;&nbsp;
+                                                                <br>
+                                                            @endif
+                                                        @endforeach
+                                                        {{--</ul>--}}
+
+                                                    </div>
+                                                @endfor
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary pull-right">Update</button>
 
                                 <div class="clearfix"></div>
                             </form>

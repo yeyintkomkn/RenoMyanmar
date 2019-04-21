@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2019-04-13 15:11:10
--- 服务器版本： 10.1.31-MariaDB
+-- Generation Time: Apr 21, 2019 at 07:54 PM
+-- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 表的结构 `admin_feedbacks`
+-- Table structure for table `admin_feedbacks`
 --
 
 CREATE TABLE `admin_feedbacks` (
@@ -38,7 +38,7 @@ CREATE TABLE `admin_feedbacks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `admin_feedbacks`
+-- Dumping data for table `admin_feedbacks`
 --
 
 INSERT INTO `admin_feedbacks` (`id`, `picture`, `name`, `description`, `created_at`, `updated_at`) VALUES
@@ -56,7 +56,7 @@ INSERT INTO `admin_feedbacks` (`id`, `picture`, `name`, `description`, `created_
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ads`
+-- Table structure for table `ads`
 --
 
 CREATE TABLE `ads` (
@@ -70,7 +70,7 @@ CREATE TABLE `ads` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `ads`
+-- Dumping data for table `ads`
 --
 
 INSERT INTO `ads` (`id`, `photo`, `created_at`, `updated_at`, `link`, `start_date`, `end_date`) VALUES
@@ -87,7 +87,7 @@ INSERT INTO `ads` (`id`, `photo`, `created_at`, `updated_at`, `link`, `start_dat
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ads_webpages`
+-- Table structure for table `ads_webpages`
 --
 
 CREATE TABLE `ads_webpages` (
@@ -99,7 +99,7 @@ CREATE TABLE `ads_webpages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `ads_webpages`
+-- Dumping data for table `ads_webpages`
 --
 
 INSERT INTO `ads_webpages` (`id`, `webpage_id`, `ads_id`, `created_at`, `updated_at`) VALUES
@@ -131,7 +131,7 @@ INSERT INTO `ads_webpages` (`id`, `webpage_id`, `ads_id`, `created_at`, `updated
 -- --------------------------------------------------------
 
 --
--- 表的结构 `blogs`
+-- Table structure for table `blogs`
 --
 
 CREATE TABLE `blogs` (
@@ -144,7 +144,7 @@ CREATE TABLE `blogs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `blogs`
+-- Dumping data for table `blogs`
 --
 
 INSERT INTO `blogs` (`id`, `title`, `description`, `photo`, `created_at`, `updated_at`) VALUES
@@ -153,13 +153,12 @@ INSERT INTO `blogs` (`id`, `title`, `description`, `photo`, `created_at`, `updat
 (3, 'December Promotion: Interior Design & Decoration', 'ယခု လုိ ၀ါ က်ြတ္ အခါ သမယ မွာ မ ဂၤ လာ လာ ေဆာင္ ပဲြ ေတြ က်င္း ပ ျက မယ့္ မ ဂၤ လာ ေမာင္ နွံ ေတြ အတြက္ သတင္း ေကာင္း ေလး ပါး ခ်င္ လုိ့ ပါ\r\nမ ဂၤ လာ ေဆာင္ ျပီး တူ နွစ္ ကုိယ္ တစ္ မုိး ေအာက္ ေန ခ်င္ သူ မ်ား အတြက္ ေခတ္ မွီ ျပီး သာယာ လွ ပ တဲ့ အိမ္ ေလး အျဖစ္ က်ြန္ မ တုိ့ M-SQUARE မွ လွ ပ ဆန္း သစ္ ေသာ ဒီ ဇုိငး္ မ်ား နဲ့ ပံု ေဖာ္ ဖန္ တီး ျပဳ ျပင္ ေပး ေန ပါ တယ္ ရွင္\r\nအထူး promotion အေန ျဖင့္ မ ဂၤ လာ ေမာင္ ႏွံ မ်ား ေန ထုိင္ မည့္ အိမ္ ၊တုိက္ ခန္း ၊ကြန္ ဒို အခန္း မ်ား ကုိ သိန္း တစ္ ရာ ႏွင့္ အထက္ ျပဳ ျပင္ မည္ ဆုိ ပါ က king size\r\nမ ဂၤလာ ကု တင္ (customize ) တစ္ လုံး ကုိ လက္ ေဆာင္ အေန နွင့္ ထည္သြင္း ေပး သြား မွာ ျဖစ္ ပါ တယ္ က်ြန္ မ တုိ့ ႏွင့္ အခန္း အပ္ နွံ မည္ ဆုိ ပါ က ဒီ ဇုိငး္ ခ ကုိ လဲ မယူ ပဲ အခ မဲ့ အေန နဲ႔ မ ဂၤ လာ ေမာင္ ႏွံ တုိ့ စိတ္ ျကိုက္ ေရးဆဲြ ေပး သြား မွာ ျဖစ္ လုိ့ အျမန္ ဆံုး ပဲ ဆက္ သြယ္ နုိင္ ဖုိ့ သတင္းေကာင္း ေပး လုိက္ ပါ တယ္ ရွင္\r\n\r\nဆက္ သြယ္ ရန္\r\nအမွတ္ (၂၅၂) ခေရ ျမိဳင္ လမ္း၊ ဗိုလ္ခ်ဳပ္ရြာ ၃ ၊သုဝဏၰျမိဳ့\r\nနယ္\r\nဖုန္း 09426999918, 09256999918\r\n\r\nweb : www.msquaremyanmar.com\r\nmail : customercare@msquaremyanmar.com', '5c1c7e5ed536a_Render_Bedroom_sc2_edt-1080x675.jpg', '2018-12-21 05:47:10', '2018-12-21 05:47:10'),
 (4, 'RC လုံးခ်င္း Building သီတင္းကၽြတ္ အထူး Promotion', 'ေပ ၂၀ x ၆၀ ျခံ ၀န္း ေလး ထဲ တြင္ ေဆာက္ လုုပ္ နုုိင္ သည့္ ၁၈ x ၄၄ ေပ RC ၃ ထပ္ အဆာက္ အဦး ဒီ ဇုုိင္း ေလး ျဖစ္ပါတယ္ ရွင္\r\nကုုန္ က် စရိတ္ အေန နဲ့ ဆုုိ ရင္ ေတာ့ သိန္း ၅၂၀ ၀န္း က်င္ ေလာက္ ကုုန္ က် မည္ ျဖစ္ ပါသည္\r\n\r\nအ ေဆာက္ အဦး တြင္ ပါ ၀င္ မည့္ အခ်က္ အလက္ မ်ား က ေတာ့\r\n\r\n* ေရ မီး ေဆး (standard condition)\r\n* အ ေဆာက္ အဦး အျပင္ ပုုိင္း အား design ပါ အတုုိင္း တည္ ေဆာက္ ေပး ျခင္း\r\n* အ ေဆာက္ အဦး အတြင္း အခန္း မ်ား ကုိ drawing ပါ အတိုုင္း ကန့္ ေပး ျခင္း\r\n* ေရ ခ်ိး ခန္း အိမ္ သာ ျကမ္း ခင္း မ်ား ကုုိ ေျကြျပား ကပ္ ေပးျခင္း\r\n* ဘုုိ ထုုိင္ ေဘ ဇင္ မ်ား ကုုိ drawing ပါ အတိုုင္း တပ္ဆင္ ေပးျခင္း\r\n* အတြင္း RC ေလွကား နွင့္ ေလွကား လက္ ရန္း အား steel (GI) ျဖင့္ တပ္ဆင္ေပးျခင္း\r\n* အေရး ေပၚ ေလွ ကား အား steel (GI) ျဖင့္ တပ္ဆင္ တည္ေဆာက္ ေပးျခင္း\r\n* ျပဴ တင္း ေပါက္ မ်ား အား aluminium (powder coated) မ်ား ျဖင့္ တပ္ဆင္ေပးျခင္း\r\n* Main Door အား ကၽြန္း တံခါး တပ္ဆင္ ေပး ျခင္း\r\n* မီး ဖိုု ခံုု ျပဳ လုုပ္ တည္ ေဆာက္ ေပး ျခင္း\r\n* Ground Tank ထည့္ ေပး ျခင္း\r\n* Spetic Tank ထည့္ ေပး ျခင္း\r\n* Water Tank (၁၀၀၀ လီတာ) နွစ္ လုုံး ထည့္ ေပး ျခင္း\r\n\r\n==> အျခား အလွ ဆင္ လုုပ္ ငန္း မ်ား မ ၀င္ ပါ\r\n\r\nDesign By – M-Square\r\n\r\nအ ေသး စိတ္ သိ ရွိ လုုိ ပါ\r\n\r\nM-Square Construction & Decoration Co.,Ltd\r\nNo252, Khayay Myaing Street ,VIP 3 Thuwanna Township , Yangon\r\nContact No : 09426999918 / 09256999918', '5c1c7ed0e71cb_Promo1-960x675.jpg', '2018-12-21 05:49:04', '2018-12-21 05:49:04'),
 (5, 'What we can do for you…', 'Why you need us ?\r\nဥပမာေပါ့\r\n\r\nPainting ဆိုတာ လြယ္ပါတယ္။ ပတ္တီး႐ိုက္မယ္ ကိုယ္ႀကိဳက္တဲ့ အေရာင္ေလးကို ေဆးဆိုင္ကဝယ္ Roller ေလးနဲ႔ လွိမ့္လိုက္႐ုံေပါ့။ ဟုတ္တယ္ေနာ္။\r\n\r\nဒါေပမယ့္ ကၽြန္ေတာ္တို႔က သင့္ အိမ္၊ အိပ္ခန္းေလး၊ ႐ုံးခန္းေလးကို သင့္ႀကိဳက္တဲ့ အေရာင္ေပၚမူတည္ၿပီး meaningful ျဖစ္ေအာင္ သင္စိတ္ကူးထားတဲ့ အေရာင္ေလးေတြရဲ႕ အဓိပၸါယ္ေလးေတြ ေလးနက္မႈရွိေအာင္ အၾကံေပးႏိုင္ပါတယ္။ ဘယ္ေဆးသုတ္ရင္ ဘယ္ေလာက္ခံၿပီး အာမခံေပးတာ အထိေပါ့။\r\n\r\nမီးႀကိဳးေတြဆြဲမယ္ မီးဆရာေခၚၿပီး မီးလိုင္းေတြေျပးလိုက္႐ုံပဲေလ။ ဟုတ္တယ္ေနာ္။\r\nဒါေပမယ့္ Basic standard ေလးေတြကို follow ၿပီး စနစ္တက်တပ္ဆင္ေပးမယ့္သူရွိရင္ေတာ့ သင့္အတြက္ Safety ပိုျဖစ္မယ္၊ Comfort ပိုျဖစ္ေစမွာပါ။\r\n\r\nဒါတင္မကေသးဘူးေလ၊ သင့္ အိမ္၊ ႐ုံးခန္း၊ ဆိုင္ခန္းေတြကို တိုးတက္လာတဲ့ ေခတ္နဲ႔အညီ ဘယ္လို renovate လုပ္ရင္ သင့္ေလ်ာ္မယ္၊ ဘယ္လို repurpose လုပ္လို႔ ရမယ္ဆိုတာေတြကိုလည္း M-Square က အၾကံေပးႏိုင္ပါတယ္။\r\n\r\nက်ေနာ္၊က်မက ေတာ့ ဒီ Budget အတြင္းပဲ လုပ္ႏိုင္ေသးလို႔ ဘယ္လိုေလးနဲ႔ အဆင္ေျပမလဲဆိုလည္း MSquare က အၾကံဉာဏ္ေပးဖို႔ welcome ပါပဲ ခင္ဗ်ာ။\r\n\r\nကၽြန္ေတာ္တို႔မွာရွိတဲ့ wide range of material knowledgeေတြ၊ Construction Experience ေတြနဲ႔ သင္စိတ္ကူးထားတဲ့ design ေလးေတြ reality ျဖစ္ေအာင္ ကူညီေပးႏိုင္ပါတယ္။\r\n\r\nကၽြန္ေတာ္တို႔ M-Square မွာ စကၤာပူမွ Architect မ်ား in-house အသင့္ရွိသည့္အျပင္ Design & Build ျဖစ္သည့္အတြက္ Construction အမ်ားစုျဖစ္ေနေသာ Design-Operations conflicts မ်ားကို အလြယ္တကူနဲ႔ အခ်ိန္တိုအတြင္း ေျဖရွင္းေပးႏိုင္ပါတယ္။ အဲ့အတြက္ Client အေနနဲ႔ စိတ္ခ်မ္းသာမႈ အျပည့္အဝရရွိေစမွာပါ။\r\n\r\nတကယ္က MSquare Design ဆိုေပမယ့္ ကၽြန္ေတာ္တို႔ကေတာ့ Client စိတ္ကူးထဲက Design လို႔ပဲ ေခၚပါရေစ။\r\nClient ရဲ ့စိတ္ကူးေတြကို reality ျဖစ္ေအာင္ ကၽြန္ေတာ္တို႔က ေဆာင္ရႊက္ေပးေနတာပါ။\r\nဒီဟာေလးကေတာ့ ဒီလိုရွိတယ္။ ဒီလိုေလးလုပ္ရင္ေတာ့ ဒီလိုျဖစ္မယ္။ ၾကာရွည္ခံမယ္၊ comfort ျဖစ္မယ္၊ အစရွိတာေတြကို Client ကို အသိေပး။ Client ရဲ႕ အသုံးျပဳလို႔တဲ့ Purpose ေပၚမူတည္ၿပီး ကၽြန္ေတာ္တို႔ Designer ေတြက လူႀကီးမင္းတို႔စိတ္တိုင္းက်ဆြဲၿပီးမွ Detail drawing, working drawing မ်ားျဖင့္ work schedule အတိုင္း ေဆာက္လုပ္ေပးျခင္းျဖစ္ပါတယ္။\r\n\r\nMSquare ရဲ႕ ရည္ရႊယ္ခ်က္က “Not just build a house, We make home” ပါ။ ဘာေလးပဲ ေဆာက္ေဆာက္ ကၽြန္ေတာ္တို႔က Customer တိုင္းရဲ႕ Memories Maker ျဖစ္ခ်င္တာပါ။\r\n\r\nကၽြန္ေတာ္တို႔ MSquare ကို ဆက္သြယ္ခ်င္ရင္ေတာ့\r\nOffice address\r\nNo.252, Khayae Myaing Street, Ward 30, VIP-3, Thuwunna Township, Yangon, 11071 သို႔၎\r\nဖုန္းျဖင့္ 095136939 (သို႔) 09426999918 သို႔ဖုန္းဆက္၍၎\r\nEmail ျဖင့္ customercare@msquaremyanmar.com သို႔၎ ဆက္သြယ္ေမးျမန္းႏိုင္ပါသည္ခင္ဗ်ား။', '5c1c7f033d1ba_basic.jpg', '2018-12-21 05:49:55', '2018-12-21 05:49:55'),
-(6, 'ဘူးသီး ႏွင့္ Mr Wok မီးေတာက္ေခါက္ဆြဲ ဆုိင္ခြဲသစ္ ၿပင္ဆင္မႈၿပီးစီး', 'Rangoon Tea House ၏ ဆိုင္ခြဲ အသစ္အေနျဖင့္\r\nဖြင့္လွစ္ထားေသာ ဘိုကေလးေစ်းလမ္း အတြင္းရွိ “ဘူးသီး” ဆိုင္ေလးကို decoration ျပင္ေပးထားတဲ့ Project ေလးပါ။\r\nရိုုးရာဓေလ့ အစားအေသာက္ေကာင္း ၾကိဳက္ႏွစ္သက္သူမ်ား အတြက္ေတာ့ မျဖစ္မေန သြားေရာက္ စားသံုးသင့္တဲ့ cozy ထမင္းဆိုင္ ေလး တစ္ခုျဖစ္ပါတယ္။\r\nယံုၾကည့္စိတ္ခ်စြာ လုပ္ငန္း အပ္ႏွံလာတဲ့ RTH Group ကိုလဲ က်ေနာ္တို႕ M-Square မွ အထူးပင္\r\nေက်းဇူးတင္ရွိပါေၾကာင္း။\r\n\r\nလူၾကီးမင္းတို႕ ေနအိမ္တိုက္ခန္း၊ ရံုုးခန္း၊ ဆိုင္ခန္း မ်ားကို ေခတ္မွီ Design လွလွေလးမ်ားနဲ႕\r\nဖန္တီး တည္ေဆာက္ခ်င္တယ္ ဆိုရင္ေတာ့ . က်ေနာ္တို႕\r\nM-Square Construction & Decoration Co.,Ltd နဲ႕ ဆက္သြယ္လိုက္ဖို႕ ဖိတ္ေခၚပါတယ္။\r\n100% စိတ္ေက်နပ္ မႈ၊ ေစ်းႏႈန္း မွန္ကန္မႈ ႏွင့္ အရည္အေသြးျပည့္မွီဖို႕ အတြက္ေတာ့အျပည့္အ၀ တာ၀န္ယူပါတယ္။\r\n\r\n*Interior Design and Conceptualisation by Atelier Sao Design\r\n*Build, Project Consultation and Project Management by M-square\r\n\r\nNo252, Khayay Myaing Street ,VIP 3 Thuwanna Township , Yangon\r\nContact No : 09426999918,09256999918', '5c1c800e4b0cf_Buthee-Upstair-2-1080x675.jpg', '2018-12-21 05:54:22', '2018-12-21 05:54:22'),
-(8, 'sdfdf', 'sdfdfd', '5c66b01566a42_49745690_2840954005918520_546117757544955904_n.jpg', '2019-02-15 12:27:01', '2019-02-15 12:27:01');
+(6, 'ဘူးသီး ႏွင့္ Mr Wok မီးေတာက္ေခါက္ဆြဲ ဆုိင္ခြဲသစ္ ၿပင္ဆင္မႈၿပီးစီး', 'Rangoon Tea House ၏ ဆိုင္ခြဲ အသစ္အေနျဖင့္\r\nဖြင့္လွစ္ထားေသာ ဘိုကေလးေစ်းလမ္း အတြင္းရွိ “ဘူးသီး” ဆိုင္ေလးကို decoration ျပင္ေပးထားတဲ့ Project ေလးပါ။\r\nရိုုးရာဓေလ့ အစားအေသာက္ေကာင္း ၾကိဳက္ႏွစ္သက္သူမ်ား အတြက္ေတာ့ မျဖစ္မေန သြားေရာက္ စားသံုးသင့္တဲ့ cozy ထမင္းဆိုင္ ေလး တစ္ခုျဖစ္ပါတယ္။\r\nယံုၾကည့္စိတ္ခ်စြာ လုပ္ငန္း အပ္ႏွံလာတဲ့ RTH Group ကိုလဲ က်ေနာ္တို႕ M-Square မွ အထူးပင္\r\nေက်းဇူးတင္ရွိပါေၾကာင္း။\r\n\r\nလူၾကီးမင္းတို႕ ေနအိမ္တိုက္ခန္း၊ ရံုုးခန္း၊ ဆိုင္ခန္း မ်ားကို ေခတ္မွီ Design လွလွေလးမ်ားနဲ႕\r\nဖန္တီး တည္ေဆာက္ခ်င္တယ္ ဆိုရင္ေတာ့ . က်ေနာ္တို႕\r\nM-Square Construction & Decoration Co.,Ltd နဲ႕ ဆက္သြယ္လိုက္ဖို႕ ဖိတ္ေခၚပါတယ္။\r\n100% စိတ္ေက်နပ္ မႈ၊ ေစ်းႏႈန္း မွန္ကန္မႈ ႏွင့္ အရည္အေသြးျပည့္မွီဖို႕ အတြက္ေတာ့အျပည့္အ၀ တာ၀န္ယူပါတယ္။\r\n\r\n*Interior Design and Conceptualisation by Atelier Sao Design\r\n*Build, Project Consultation and Project Management by M-square\r\n\r\nNo252, Khayay Myaing Street ,VIP 3 Thuwanna Township , Yangon\r\nContact No : 09426999918,09256999918', '5c1c800e4b0cf_Buthee-Upstair-2-1080x675.jpg', '2018-12-21 05:54:22', '2018-12-21 05:54:22');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `companies`
+-- Table structure for table `companies`
 --
 
 CREATE TABLE `companies` (
@@ -186,11 +185,11 @@ CREATE TABLE `companies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `companies`
+-- Dumping data for table `companies`
 --
 
 INSERT INTO `companies` (`id`, `company_name`, `email`, `phone`, `facebook_url`, `website_url`, `address`, `description`, `location`, `google_map_lat`, `google_map_lon`, `type`, `vision_and_mission`, `what_we_do`, `why_join_us`, `verify`, `status`, `photo`, `created_at`, `updated_at`) VALUES
-(23, 'GreenHacker', 'greenhacker@gmail.com', '09771672511', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'No(51) A ,Bayathe Street, TaMaw, Yangon', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', 9, 9, 'paid', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 1, 'diamond.png', '2018-11-06 08:49:48', '2019-01-11 12:12:52'),
+(23, 'GreenHackers', 'greenhacker@gmail.com', '09771672511', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'No(51) A ,Bayathe Street, TaMaw, Yangon', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', 9, 9, 'paid', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 1, '5cbc985d75204_images.png', '2018-11-06 08:49:48', '2019-04-21 17:46:41'),
 (25, 'Samsung', 'samsung@gmail.com', '098877788', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'Yangon, Bahan', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Yangon', NULL, NULL, 'free', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 1, 'lwin.png', '2018-11-10 13:18:32', '2019-01-11 12:13:03'),
 (26, 'CodeX', 'codex@gmail.com', '0977676677', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'TesyADdress', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Yangon', NULL, NULL, 'paid', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 1, 'typ.png', '2018-11-11 16:40:21', '2019-01-09 03:08:14'),
 (27, 'Idea', 'idea@gmail.com', '099888999', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'TestAddress', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Yangon', NULL, NULL, 'paid', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 1, 'llk.png', '2018-11-11 16:40:49', '2018-12-23 09:31:56'),
@@ -199,21 +198,22 @@ INSERT INTO `companies` (`id`, `company_name`, `email`, `phone`, `facebook_url`,
 (30, 'Burn', 'burn@gmail.com', '098889988', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'Tangyi, 34 ', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', NULL, NULL, 'paid', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 1, 'kec.png', '2018-11-11 16:42:07', '2019-01-27 04:07:22'),
 (32, 'D2', 'd2@gmail.com', '09888888', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'TestAddress', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Yangon', NULL, NULL, 'free', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 1, 'pnm.png', '2018-11-11 16:42:58', '2018-12-23 09:48:39'),
 (33, 'Code10', 'code10@gmail.com', '09876888', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'TestAddress', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Other', NULL, NULL, 'free', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 0, 1, 'pnytn.png', '2018-11-11 16:45:03', '2018-11-11 16:45:03'),
-(34, 'Idea Info', 'ideainfo@gmail.com', '09771672511', 'https://soundcloud.com/nyein-nyi', 'https://en.wikipedia.org/wiki/Web', 'Yangon, bla bla, Myanmar, bla bla', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', NULL, NULL, 'free', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in', 1, 1, '5c32ea49e336d_49745690_2840954005918520_546117757544955904_n.jpg', '2018-11-23 08:09:43', '2019-01-07 05:57:29'),
+(34, 'Idea Info', 'ideainfo@gmail.com', '09771672511', 'https://soundcloud.com/nyein-nyi', 'https://en.wikipedia.org/wiki/Web', 'Yangon, bla bla, Myanmar, bla bla', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Yangon', NULL, NULL, 'paid', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in', 1, 1, '5cbbf0f06fd59_images.png', '2018-11-23 08:09:43', '2019-04-21 04:26:24'),
 (37, 'Myint Moh', 'myintmoh@outlook.com', '0987888877', NULL, '', NULL, 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, '5c375e0a16dd5_49592466_2840954112585176_2669726296526815232_n.jpg', '2018-12-22 10:14:17', '2019-01-10 15:00:26'),
 (38, 'AungLwingKoKO', 'aung@gmail.com', '09876888', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'TestAddress', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Other', NULL, NULL, 'free', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 0, 1, 'pnytn.png', '2018-11-11 16:45:03', '2019-01-08 10:25:08'),
-(39, 'Iron Cross', 'cross@gmail.com', '09771672511', NULL, 'https://en.wikipedia.org/wiki/Web', NULL, 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Yangon', NULL, NULL, 'free', NULL, NULL, NULL, 1, 1, '5c3861d06de95_49745690_2840954005918520_546117757544955904_n.jpg', '2018-11-23 08:09:43', '2019-01-13 14:46:39'),
-(40, 'Lady OO OO', 'aaaa@outlook.com', '0987888877', NULL, '', NULL, 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', NULL, NULL, 'free', NULL, NULL, NULL, 1, 0, '5c34a3fde123a_49512288_2840954172585170_2222993790153523200_n.jpg', '2018-12-22 10:14:17', '2019-01-08 13:22:05'),
-(41, 'dfdfd', 'speed@gmail.com', '098877889', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'TestAddress', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', NULL, NULL, 'free', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 0, 'pnam.png', '2018-11-11 16:41:48', '2019-01-25 08:57:36'),
-(43, 'BluePhoenix', 'cto@bluephoenix.com', '0988778889', 'https://soundcloud.com/nyein-nyi', 'https://www.greenhackeronline.com/', 'Yangon, bla bla, Myanmar, bla bla', 'asaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a a', 'Yangon', NULL, NULL, 'paid', 'bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b', 'ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c', 'dddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d d', 1, 1, '5c51efe1cfa5a_49745690_2840954005918520_546117757544955904_n.jpg', '2018-12-31 03:04:55', '2019-01-30 18:41:55'),
+(39, 'Iron Cross', 'cross@gmail.com', '09771672511', 'https://www.facebook.com/lamodasuits/', 'https://en.wikipedia.org/wiki/Web', NULL, 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Yangon', NULL, NULL, 'paid', 'rambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letrasrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'rambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letrasrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'rambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letrasrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 1, '5cbbf0b6c7676_download.jpg', '2018-11-23 08:09:43', '2019-04-21 04:40:49'),
+(40, 'Lady OO OO', 'ladyoo@outlook.com', '0987888877', 'www.facebook.com', '', NULL, 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', NULL, NULL, 'free', 'crambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letrascrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'crambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letrascrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'crambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letrascrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 0, '5cbbef05e3067_images (2).jpg', '2018-12-22 10:14:17', '2019-04-21 04:18:14'),
+(41, 'Speed', 'speed@gmail.com', '098877889', 'https://www.facebook.com/profile.php?id=100011426835764', 'https://en.wikipedia.org/wiki/Web', 'TestAddress', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'Mandalay', NULL, NULL, 'free', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 'scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letras', 1, 0, '5cbbf09cbbbed_images (1).jpg', '2018-11-11 16:41:48', '2019-04-21 04:25:00'),
+(43, 'BluePhoenix', 'bluephonenix@bluephoenix.com', '0988778889', 'https://soundcloud.com/nyein-nyi', 'https://www.greenhackeronline.com/', 'Yangon, bla bla, Myanmar, bla bla', 'asaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a aasaasaaaa  a a a a a aaaaa  aa aa a a', 'Yangon', NULL, NULL, 'paid', 'bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b bb b b b b b b b  b b', 'ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c ccccc  c c c c c c c  c c c c', 'dddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d ddddddddd  dddd d d  ddddd d d d d d  d d', 1, 1, '5cbbf43b94e4c_download (1).jpg', '2018-12-31 03:04:55', '2019-04-21 04:40:27'),
 (44, 'Adault', 'adault@gmail.com', '098888888', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 0, 'nologo.png', '2019-01-30 16:07:27', '2019-01-30 16:25:45'),
 (45, 'love', 'love@gmail.com', '09988899', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-02-13 11:18:59', '2019-02-13 11:18:59'),
-(46, 'thuyeinsoe', 'thuyeinsoe@gmail.com', '09888899', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-02-13 11:23:21', '2019-02-13 11:23:21');
+(46, 'thuyeinsoe', 'thuyeinsoe@gmail.com', '09888899', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-02-13 11:23:21', '2019-02-13 11:23:21'),
+(47, 'Little Apple', 'littleapple@gmail.com', '098877788777', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-04-21 04:51:08', '2019-04-21 04:58:03');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `company_feedbacks`
+-- Table structure for table `company_feedbacks`
 --
 
 CREATE TABLE `company_feedbacks` (
@@ -227,7 +227,7 @@ CREATE TABLE `company_feedbacks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `company_feedbacks`
+-- Dumping data for table `company_feedbacks`
 --
 
 INSERT INTO `company_feedbacks` (`id`, `picture`, `company_id`, `name`, `description`, `created_at`, `updated_at`) VALUES
@@ -250,7 +250,7 @@ INSERT INTO `company_feedbacks` (`id`, `picture`, `company_id`, `name`, `descrip
 -- --------------------------------------------------------
 
 --
--- 表的结构 `company_profiles`
+-- Table structure for table `company_profiles`
 --
 
 CREATE TABLE `company_profiles` (
@@ -273,7 +273,7 @@ CREATE TABLE `company_profiles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `company_profiles`
+-- Dumping data for table `company_profiles`
 --
 
 INSERT INTO `company_profiles` (`id`, `email`, `phone`, `address`, `video`, `android`, `ios`, `facebook`, `google`, `twitter`, `instragram`, `about_us`, `vision_and_mission`, `what_we_do`, `created_at`, `updated_at`) VALUES
@@ -282,7 +282,7 @@ INSERT INTO `company_profiles` (`id`, `email`, `phone`, `address`, `video`, `and
 -- --------------------------------------------------------
 
 --
--- 表的结构 `company_projects`
+-- Table structure for table `company_projects`
 --
 
 CREATE TABLE `company_projects` (
@@ -295,7 +295,7 @@ CREATE TABLE `company_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `company_projects`
+-- Dumping data for table `company_projects`
 --
 
 INSERT INTO `company_projects` (`id`, `company_id`, `project_title`, `photo`, `created_at`, `updated_at`) VALUES
@@ -313,7 +313,7 @@ INSERT INTO `company_projects` (`id`, `company_id`, `project_title`, `photo`, `c
 -- --------------------------------------------------------
 
 --
--- 表的结构 `company__keywords`
+-- Table structure for table `company__keywords`
 --
 
 CREATE TABLE `company__keywords` (
@@ -325,7 +325,7 @@ CREATE TABLE `company__keywords` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `company__keywords`
+-- Dumping data for table `company__keywords`
 --
 
 INSERT INTO `company__keywords` (`id`, `company_id`, `keyword_id`, `created_at`, `updated_at`) VALUES
@@ -349,7 +349,7 @@ INSERT INTO `company__keywords` (`id`, `company_id`, `keyword_id`, `created_at`,
 -- --------------------------------------------------------
 
 --
--- 表的结构 `contacts`
+-- Table structure for table `contacts`
 --
 
 CREATE TABLE `contacts` (
@@ -364,7 +364,7 @@ CREATE TABLE `contacts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `contacts`
+-- Dumping data for table `contacts`
 --
 
 INSERT INTO `contacts` (`id`, `name`, `email`, `phone`, `subject`, `message`, `created_at`, `updated_at`) VALUES
@@ -383,7 +383,7 @@ INSERT INTO `contacts` (`id`, `name`, `email`, `phone`, `subject`, `message`, `c
 -- --------------------------------------------------------
 
 --
--- 表的结构 `employees`
+-- Table structure for table `employees`
 --
 
 CREATE TABLE `employees` (
@@ -404,7 +404,7 @@ CREATE TABLE `employees` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `employees`
+-- Dumping data for table `employees`
 --
 
 INSERT INTO `employees` (`id`, `username`, `email`, `phone`, `address`, `budget_range`, `category_id_arr`, `project_type_arr`, `start_date`, `current_situation`, `note`, `file`, `created_at`, `updated_at`) VALUES
@@ -422,12 +422,13 @@ INSERT INTO `employees` (`id`, `username`, `email`, `phone`, `address`, `budget_
 (39, 'Khin Moe Aye', 'khinmoeaye@gmail.com', '099889999', 'Myitkyina', '300laks', '[\"1\",\"2\"]', '[\"2\",\"4\",\"6\"]', '2019-01-31', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', '5c501c9ae129c_50807582_792061294490544_627213234083987456_n.jpg', '2019-01-29 09:29:22', '2019-01-29 09:29:22'),
 (40, 'Moe Kyaw', 'moe@gmail.com', '09998999', 'Myitkyina', '200laks', '[\"1\",\"2\"]', '[\"1\",\"4\",\"6\"]', '2019-01-24', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'd scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont', '5c501d57c3612_12 things to do ubuntu 18.04.pdf', '2019-01-29 09:32:41', '2019-01-29 09:32:41'),
 (41, 'Ye Yint Ko', 'yeyintko.mkn@gmail.com', '09771672511', '677767767', '300laks', '[\"1\"]', '[\"1\",\"2\"]', '2019-02-21', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'dfjdkfjdf asd;kfjd lkflksdf asdfkdjfdj fd', '5c6544510d8f7_49745690_2840954005918520_546117757544955904_n.jpg', '2019-02-14 10:35:09', '2019-02-14 10:35:09'),
-(42, 'Khin', 'khinmoeaye@gmail.com', '098777788', 'Myitkyina', '300laks', '[\"1\",\"2\",\"3\"]', '[\"1\",\"2\"]', '2019-03-31', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'd scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont', '', '2019-03-06 09:22:04', '2019-03-06 09:22:04');
+(42, 'Khin', 'khinmoeaye@gmail.com', '098777788', 'Myitkyina', '300laks', '[\"1\",\"2\",\"3\"]', '[\"1\",\"2\"]', '2019-03-31', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'd scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont', '', '2019-03-06 09:22:04', '2019-03-06 09:22:04'),
+(43, 'Wai Wai', 'wai@gmail.com', '09878888787', 'MKN', '300laks', '[\"1\",\"2\"]', '[\"2\",\"4\",\"5\"]', '2019-04-23', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'd scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont', '5cbc920ac89e3_74-CU(Myitkyina).pdf', '2019-04-21 15:55:02', '2019-04-21 15:55:02');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `employee__companies`
+-- Table structure for table `employee__companies`
 --
 
 CREATE TABLE `employee__companies` (
@@ -439,7 +440,7 @@ CREATE TABLE `employee__companies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `employee__companies`
+-- Dumping data for table `employee__companies`
 --
 
 INSERT INTO `employee__companies` (`id`, `employee_id`, `company_id`, `created_at`, `updated_at`) VALUES
@@ -500,12 +501,13 @@ INSERT INTO `employee__companies` (`id`, `employee_id`, `company_id`, `created_a
 (89, 41, 34, '2019-02-14 10:35:09', '2019-02-14 10:35:09'),
 (90, 42, 30, '2019-03-06 09:22:05', '2019-03-06 09:22:05'),
 (91, 42, 32, '2019-03-06 09:22:05', '2019-03-06 09:22:05'),
-(92, 42, 34, '2019-03-06 09:22:05', '2019-03-06 09:22:05');
+(92, 42, 34, '2019-03-06 09:22:05', '2019-03-06 09:22:05'),
+(93, 43, 23, '2019-04-21 15:55:02', '2019-04-21 15:55:02');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `keywords`
+-- Table structure for table `keywords`
 --
 
 CREATE TABLE `keywords` (
@@ -516,7 +518,7 @@ CREATE TABLE `keywords` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `keywords`
+-- Dumping data for table `keywords`
 --
 
 INSERT INTO `keywords` (`id`, `name`, `created_at`, `updated_at`) VALUES
@@ -530,7 +532,7 @@ INSERT INTO `keywords` (`id`, `name`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `main_categories`
+-- Table structure for table `main_categories`
 --
 
 CREATE TABLE `main_categories` (
@@ -541,7 +543,7 @@ CREATE TABLE `main_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `main_categories`
+-- Dumping data for table `main_categories`
 --
 
 INSERT INTO `main_categories` (`id`, `category_name`, `created_at`, `updated_at`) VALUES
@@ -552,7 +554,7 @@ INSERT INTO `main_categories` (`id`, `category_name`, `created_at`, `updated_at`
 -- --------------------------------------------------------
 
 --
--- 表的结构 `migrations`
+-- Table structure for table `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -562,7 +564,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `migrations`
+-- Dumping data for table `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -595,7 +597,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `password_resets`
+-- Table structure for table `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -607,7 +609,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `sub_categories`
+-- Table structure for table `sub_categories`
 --
 
 CREATE TABLE `sub_categories` (
@@ -620,7 +622,7 @@ CREATE TABLE `sub_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `sub_categories`
+-- Dumping data for table `sub_categories`
 --
 
 INSERT INTO `sub_categories` (`id`, `main_category_id`, `category_name`, `logo`, `created_at`, `updated_at`) VALUES
@@ -659,7 +661,7 @@ INSERT INTO `sub_categories` (`id`, `main_category_id`, `category_name`, `logo`,
 -- --------------------------------------------------------
 
 --
--- 表的结构 `sub_category_companies`
+-- Table structure for table `sub_category_companies`
 --
 
 CREATE TABLE `sub_category_companies` (
@@ -671,12 +673,10 @@ CREATE TABLE `sub_category_companies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `sub_category_companies`
+-- Dumping data for table `sub_category_companies`
 --
 
 INSERT INTO `sub_category_companies` (`id`, `company_id`, `subcategory_id`, `created_at`, `updated_at`) VALUES
-(1, 23, 1, NULL, NULL),
-(2, 23, 2, NULL, NULL),
 (3, 25, 1, NULL, NULL),
 (4, 25, 2, NULL, NULL),
 (5, 27, 7, NULL, NULL),
@@ -703,18 +703,21 @@ INSERT INTO `sub_category_companies` (`id`, `company_id`, `subcategory_id`, `cre
 (27, 34, 2, NULL, NULL),
 (28, 34, 1, NULL, NULL),
 (29, 27, 6, NULL, NULL),
-(31, 23, 3, NULL, NULL),
 (32, 25, 3, NULL, NULL),
 (33, 32, 18, NULL, NULL),
 (34, 33, 24, NULL, NULL),
 (35, 34, 3, NULL, NULL),
 (37, 33, 25, NULL, NULL),
-(38, 32, 21, NULL, NULL);
+(38, 32, 21, NULL, NULL),
+(39, 23, 1, '2019-04-21 17:45:54', '2019-04-21 17:45:54'),
+(40, 23, 2, '2019-04-21 17:45:54', '2019-04-21 17:45:54'),
+(41, 23, 3, '2019-04-21 17:45:54', '2019-04-21 17:45:54'),
+(42, 23, 9, '2019-04-21 17:45:54', '2019-04-21 17:45:54');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `top_companies`
+-- Table structure for table `top_companies`
 --
 
 CREATE TABLE `top_companies` (
@@ -725,7 +728,7 @@ CREATE TABLE `top_companies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `top_companies`
+-- Dumping data for table `top_companies`
 --
 
 INSERT INTO `top_companies` (`id`, `company_id`, `created_at`, `updated_at`) VALUES
@@ -745,7 +748,7 @@ INSERT INTO `top_companies` (`id`, `company_id`, `created_at`, `updated_at`) VAL
 -- --------------------------------------------------------
 
 --
--- 表的结构 `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -760,7 +763,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `company_id`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
@@ -781,12 +784,13 @@ INSERT INTO `users` (`id`, `company_id`, `email`, `email_verified_at`, `password
 (18, 23, 'greenhacker@gmail.com', NULL, '$2y$10$btqFuU2zU0csQur8mD2Qo.9TBKLMI6R/cjdfKoq.IrhevshXjLSde', NULL, '2018-11-06 08:49:49', '2018-11-06 08:49:49'),
 (19, 44, 'adault@gmail.com', NULL, '$2y$10$22xvqLSYGcrl0hYIjK8ZAuJvXMaQK6ek/qLjjT5kXNFMl8Qszel6u', NULL, '2019-01-30 16:07:27', '2019-01-30 16:07:27'),
 (20, 45, 'love@gmail.com', NULL, '$2y$10$JwC5b1MF3ZrxOpqVnZPdK.ZLIbXAAQeiNNSIEy85J39m/4/9Spu2K', NULL, '2019-02-13 11:19:00', '2019-02-13 11:19:00'),
-(21, 46, 'thuyeinsoe@gmail.com', NULL, '$2y$10$fV31MmRH4PwC7GreQSMmjOjA6QodEIZ4pchLM2LYVsgfdcBAiOi6O', NULL, '2019-02-13 11:23:21', '2019-02-13 11:23:21');
+(21, 46, 'thuyeinsoe@gmail.com', NULL, '$2y$10$fV31MmRH4PwC7GreQSMmjOjA6QodEIZ4pchLM2LYVsgfdcBAiOi6O', NULL, '2019-02-13 11:23:21', '2019-02-13 11:23:21'),
+(22, 47, 'littleapple@gmail.com', NULL, '$2y$10$JX./nQHDiRoQpw3TGenG5uB.oQLJMPqj8ltGFoNQd/3v8RwrLbdWa', NULL, '2019-04-21 04:51:09', '2019-04-21 04:51:09');
 
 -- --------------------------------------------------------
 
 --
--- 替换视图以便查看 `view_main_category_companies`
+-- Stand-in structure for view `view_main_category_companies`
 -- (See below for the actual view)
 --
 CREATE TABLE `view_main_category_companies` (
@@ -801,7 +805,7 @@ CREATE TABLE `view_main_category_companies` (
 -- --------------------------------------------------------
 
 --
--- 替换视图以便查看 `view_user_companies`
+-- Stand-in structure for view `view_user_companies`
 -- (See below for the actual view)
 --
 CREATE TABLE `view_user_companies` (
@@ -830,7 +834,7 @@ CREATE TABLE `view_user_companies` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `webpages`
+-- Table structure for table `webpages`
 --
 
 CREATE TABLE `webpages` (
@@ -841,7 +845,7 @@ CREATE TABLE `webpages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 转存表中的数据 `webpages`
+-- Dumping data for table `webpages`
 --
 
 INSERT INTO `webpages` (`id`, `name`, `created_at`, `updated_at`) VALUES
@@ -853,20 +857,46 @@ INSERT INTO `webpages` (`id`, `name`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- 视图结构 `view_main_category_companies`
+-- Structure for view `view_main_category_companies` exported as a table
 --
 DROP TABLE IF EXISTS `view_main_category_companies`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_main_category_companies`  AS  select `sub_category_companies`.`id` AS `id`,`sub_category_companies`.`company_id` AS `company_id`,`sub_category_companies`.`subcategory_id` AS `subcategory_id`,`sub_category_companies`.`created_at` AS `created_at`,`sub_category_companies`.`updated_at` AS `updated_at`,`sub_categories`.`main_category_id` AS `main_category_id` from (`sub_category_companies` left join `sub_categories` on((`sub_category_companies`.`subcategory_id` = `sub_categories`.`id`))) ;
+CREATE TABLE`view_main_category_companies`(
+    `id` int(10) unsigned NOT NULL DEFAULT '0',
+    `company_id` int(11) NOT NULL,
+    `subcategory_id` int(11) NOT NULL,
+    `created_at` timestamp DEFAULT NULL,
+    `updated_at` timestamp DEFAULT NULL,
+    `main_category_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+);
 
 -- --------------------------------------------------------
 
 --
--- 视图结构 `view_user_companies`
+-- Structure for view `view_user_companies` exported as a table
 --
 DROP TABLE IF EXISTS `view_user_companies`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_user_companies`  AS  select `companies`.`id` AS `id`,`companies`.`company_name` AS `company_name`,`companies`.`email` AS `email`,`companies`.`phone` AS `phone`,`companies`.`facebook_url` AS `facebook_url`,`companies`.`website_url` AS `website_url`,`companies`.`address` AS `address`,`companies`.`description` AS `description`,`companies`.`location` AS `location`,`companies`.`google_map_lat` AS `google_map_lat`,`companies`.`google_map_lon` AS `google_map_lon`,`companies`.`type` AS `type`,`companies`.`vision_and_mission` AS `vision_and_mission`,`companies`.`what_we_do` AS `what_we_do`,`companies`.`why_join_us` AS `why_join_us`,`companies`.`verify` AS `verify`,`companies`.`status` AS `status`,`companies`.`photo` AS `photo`,`companies`.`created_at` AS `created_at`,`companies`.`updated_at` AS `updated_at` from `companies` where ((`companies`.`verify` = 1) and (`companies`.`status` = 1)) ;
+CREATE TABLE`view_user_companies`(
+    `id` int(10) unsigned NOT NULL DEFAULT '0',
+    `company_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+    `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+    `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+    `facebook_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `website_url` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `description` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `location` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `google_map_lat` double DEFAULT NULL,
+    `google_map_lon` double DEFAULT NULL,
+    `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'free',
+    `vision_and_mission` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `what_we_do` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `why_join_us` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `verify` tinyint(1) NOT NULL DEFAULT '0',
+    `status` tinyint(1) NOT NULL DEFAULT '1',
+    `photo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'nologo.png',
+    `created_at` timestamp DEFAULT NULL,
+    `updated_at` timestamp DEFAULT NULL
+);
 
 --
 -- Indexes for dumped tables
@@ -993,125 +1023,125 @@ ALTER TABLE `webpages`
   ADD PRIMARY KEY (`id`);
 
 --
--- 在导出的表使用AUTO_INCREMENT
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- 使用表AUTO_INCREMENT `admin_feedbacks`
+-- AUTO_INCREMENT for table `admin_feedbacks`
 --
 ALTER TABLE `admin_feedbacks`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- 使用表AUTO_INCREMENT `ads`
+-- AUTO_INCREMENT for table `ads`
 --
 ALTER TABLE `ads`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- 使用表AUTO_INCREMENT `ads_webpages`
+-- AUTO_INCREMENT for table `ads_webpages`
 --
 ALTER TABLE `ads_webpages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- 使用表AUTO_INCREMENT `blogs`
+-- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- 使用表AUTO_INCREMENT `companies`
+-- AUTO_INCREMENT for table `companies`
 --
 ALTER TABLE `companies`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
--- 使用表AUTO_INCREMENT `company_feedbacks`
+-- AUTO_INCREMENT for table `company_feedbacks`
 --
 ALTER TABLE `company_feedbacks`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- 使用表AUTO_INCREMENT `company_profiles`
+-- AUTO_INCREMENT for table `company_profiles`
 --
 ALTER TABLE `company_profiles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- 使用表AUTO_INCREMENT `company_projects`
+-- AUTO_INCREMENT for table `company_projects`
 --
 ALTER TABLE `company_projects`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- 使用表AUTO_INCREMENT `company__keywords`
+-- AUTO_INCREMENT for table `company__keywords`
 --
 ALTER TABLE `company__keywords`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- 使用表AUTO_INCREMENT `contacts`
+-- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- 使用表AUTO_INCREMENT `employees`
+-- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
--- 使用表AUTO_INCREMENT `employee__companies`
+-- AUTO_INCREMENT for table `employee__companies`
 --
 ALTER TABLE `employee__companies`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
--- 使用表AUTO_INCREMENT `keywords`
+-- AUTO_INCREMENT for table `keywords`
 --
 ALTER TABLE `keywords`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- 使用表AUTO_INCREMENT `main_categories`
+-- AUTO_INCREMENT for table `main_categories`
 --
 ALTER TABLE `main_categories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- 使用表AUTO_INCREMENT `migrations`
+-- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- 使用表AUTO_INCREMENT `sub_categories`
+-- AUTO_INCREMENT for table `sub_categories`
 --
 ALTER TABLE `sub_categories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- 使用表AUTO_INCREMENT `sub_category_companies`
+-- AUTO_INCREMENT for table `sub_category_companies`
 --
 ALTER TABLE `sub_category_companies`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- 使用表AUTO_INCREMENT `top_companies`
+-- AUTO_INCREMENT for table `top_companies`
 --
 ALTER TABLE `top_companies`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- 使用表AUTO_INCREMENT `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- 使用表AUTO_INCREMENT `webpages`
+-- AUTO_INCREMENT for table `webpages`
 --
 ALTER TABLE `webpages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;

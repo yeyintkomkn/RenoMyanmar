@@ -76,10 +76,10 @@
                     <h3 class="widgettitle widget-title">Connect Us</h3>
                     <div class="textwidget">
                         <form class="footer-form">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" class="form-control" placeholder="Email" required>
                             <textarea class="form-control" placeholder="Message"></textarea>
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -88,10 +88,11 @@
     </div>
     <div class="row copyright">
         <div class="container">
-            <p>Copyright Reno Myanmar &copy; <?php echo date('Y'); ?>. <a href="#">Design</a> by <a href="#">Green Hackers</a> </p>
+            <p>Copyright Reno Myanmar &copy; <?php echo date('Y'); ?>. <a>Design</a> by <a href="#">Green Hackers</a> </p>
         </div>
     </div>
 </footer>
+
 <div class="clearfix"></div>
 <!-- Footer Section End -->
 
