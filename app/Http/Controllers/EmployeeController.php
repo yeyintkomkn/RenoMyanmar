@@ -10,9 +10,7 @@ use App\Keyword;
 use App\Main_category;
 use App\Sub_category;
 use App\View_user_company;
-use Faker\Provider\File;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class EmployeeController extends Controller
 {
@@ -135,9 +133,14 @@ class EmployeeController extends Controller
         ]);
     }
 
+    function delete_employee($id){
+        Employee::where('id',$id)->delete();
+        Employee_Company::where('id',$id)->delete();
+        return redirect('admin/employee');
+    }
 
     function get_employee_byCompany($company_id){
-        $employee=Employee_Company::where('company_id',$company_id)->get();
+        $employee=Employee_Company::where('company_id',$company_id)->orderBy('id','desc')->get();
         $employee_info=array();
         foreach ($employee as $item) {
             $employee_data=new EmployeeData($item->employee_id);
@@ -165,7 +168,7 @@ class EmployeeController extends Controller
         ]);
     }
     function all_request_employee(){
-        $employee=Employee::all();
+        $employee=Employee::orderBy('id','desc')->get();
         $arr=[];
         foreach ($employee as $data){
             $emp_data=new EmployeeData($data->id);

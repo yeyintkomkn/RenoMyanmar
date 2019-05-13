@@ -134,7 +134,10 @@
                                             {{--<td>CurrentSituation</td>--}}
                                             {{--<td>Note</td>--}}
                                             {{--<td>File</td>--}}
-                                            <td><button class="btn btn-primary btn-sm" onclick="show_detail_model({{$data->id}})">Detail</button></td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm" onclick="show_detail_model({{$data->id}})">Detail</button>
+                                                <a href="{{url('admin/employee/delete/'.$data->id)}}" class="btn btn-danger btn-sm">Delete</a>
+                                            </td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -401,6 +404,8 @@
                     },
                 });
             }
+
+
         });
     </script>
 @endsection

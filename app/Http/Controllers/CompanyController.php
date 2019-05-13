@@ -60,7 +60,7 @@ class CompanyController extends Controller
 
             if($password==$retype_password){
 //                return $company_name.'<br>'.$phone.'<br>'.$email.'<br>'.$password;
-                $company=Company::create([
+                $company_id=Company::create([
                     'company_name'=>$company_name,
                     'phone'=>$phone,
                     'email'=>$email
@@ -69,7 +69,7 @@ class CompanyController extends Controller
 //                $company=Company::where('email',$email)->first();
                 //return $company->id;
                 User::create([
-                    'company_id'=>$company->id,
+                    'company_id'=>$company_id,
                     'email'=>$email,
                     'password'=>Hash::make($password)
                 ]);

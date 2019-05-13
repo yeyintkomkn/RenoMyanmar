@@ -14,7 +14,7 @@
                 <div class="col-md-10">
                     <div class="row position-double-2">
                         <div class="col-sm-4 col-md-2 border-company-logo">
-                            <img src="{{asset('upload/company_logo/'.$company_info->photo)}}" alt="" class="img-responsive">
+                            <img src="{{asset('upload/company_logo/'.$company_info->photo)}}" alt="" class="img-responsive" style="margin-top: 30px">
                         </div>
                         <div class="col-sm-8 col-md-10 border-company-logo-2">
                             <h4>

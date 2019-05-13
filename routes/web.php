@@ -155,7 +155,7 @@ Route::group(['middleware'=>['admin']],function() {
     //    return view('site_admin.employee_list')->with(['url'=>'emloyee']);
     //});
     Route::get('/admin/employee', 'EmployeeController@all_request_employee');
-
+    Route::get('/admin/employee/delete/{id}','EmployeeController@delete_employee');
     Route::get('/admin/blog', function () {
         return view('site_admin.blog')->with(['url' => 'blog']);
     });

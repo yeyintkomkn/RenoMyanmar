@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2019 at 07:54 PM
+-- Generation Time: May 13, 2019 at 03:38 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -208,7 +208,8 @@ INSERT INTO `companies` (`id`, `company_name`, `email`, `phone`, `facebook_url`,
 (44, 'Adault', 'adault@gmail.com', '098888888', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 0, 'nologo.png', '2019-01-30 16:07:27', '2019-01-30 16:25:45'),
 (45, 'love', 'love@gmail.com', '09988899', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-02-13 11:18:59', '2019-02-13 11:18:59'),
 (46, 'thuyeinsoe', 'thuyeinsoe@gmail.com', '09888899', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-02-13 11:23:21', '2019-02-13 11:23:21'),
-(47, 'Little Apple', 'littleapple@gmail.com', '098877788777', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-04-21 04:51:08', '2019-04-21 04:58:03');
+(47, 'Little Apple', 'littleapple@gmail.com', '098877788777', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-04-21 04:51:08', '2019-04-21 04:58:03'),
+(48, 'Moe Moe', 'moemoekyawkyaw@gmail.com', '09771672511', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'free', NULL, NULL, NULL, 0, 1, 'nologo.png', '2019-04-24 09:55:13', '2019-04-24 09:55:13');
 
 -- --------------------------------------------------------
 
@@ -422,8 +423,7 @@ INSERT INTO `employees` (`id`, `username`, `email`, `phone`, `address`, `budget_
 (39, 'Khin Moe Aye', 'khinmoeaye@gmail.com', '099889999', 'Myitkyina', '300laks', '[\"1\",\"2\"]', '[\"2\",\"4\",\"6\"]', '2019-01-31', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', '5c501c9ae129c_50807582_792061294490544_627213234083987456_n.jpg', '2019-01-29 09:29:22', '2019-01-29 09:29:22'),
 (40, 'Moe Kyaw', 'moe@gmail.com', '09998999', 'Myitkyina', '200laks', '[\"1\",\"2\"]', '[\"1\",\"4\",\"6\"]', '2019-01-24', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'd scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont', '5c501d57c3612_12 things to do ubuntu 18.04.pdf', '2019-01-29 09:32:41', '2019-01-29 09:32:41'),
 (41, 'Ye Yint Ko', 'yeyintko.mkn@gmail.com', '09771672511', '677767767', '300laks', '[\"1\"]', '[\"1\",\"2\"]', '2019-02-21', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'dfjdkfjdf asd;kfjd lkflksdf asdfkdjfdj fd', '5c6544510d8f7_49745690_2840954005918520_546117757544955904_n.jpg', '2019-02-14 10:35:09', '2019-02-14 10:35:09'),
-(42, 'Khin', 'khinmoeaye@gmail.com', '098777788', 'Myitkyina', '300laks', '[\"1\",\"2\",\"3\"]', '[\"1\",\"2\"]', '2019-03-31', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'd scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont', '', '2019-03-06 09:22:04', '2019-03-06 09:22:04'),
-(43, 'Wai Wai', 'wai@gmail.com', '09878888787', 'MKN', '300laks', '[\"1\",\"2\"]', '[\"2\",\"4\",\"5\"]', '2019-04-23', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'd scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont', '5cbc920ac89e3_74-CU(Myitkyina).pdf', '2019-04-21 15:55:02', '2019-04-21 15:55:02');
+(42, 'Khin', 'khinmoeaye@gmail.com', '098777788', 'Myitkyina', '300laks', '[\"1\",\"2\",\"3\"]', '[\"1\",\"2\"]', '2019-03-31', 'mmodare per. Regione debitis neglegentur mea ei, cum homero petentium persequeris ex. Ea feugait disputationi his. Nominavi deleniti nam et. Novum tollit incorrupte et vim, eu quo cibo diceret. Eu pro partem voluptua forensibus.', 'd scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont', '', '2019-03-06 09:22:04', '2019-03-06 09:22:04');
 
 -- --------------------------------------------------------
 
@@ -461,7 +461,6 @@ INSERT INTO `employee__companies` (`id`, `employee_id`, `company_id`, `created_a
 (39, 27, 27, '2019-01-08 08:01:16', '2019-01-08 08:01:16'),
 (41, 27, 28, '2019-01-08 08:01:16', '2019-01-08 08:01:16'),
 (42, 27, 29, '2019-01-08 08:01:16', '2019-01-08 08:01:16'),
-(43, 28, 30, '2019-01-08 13:06:44', '2019-01-08 13:06:44'),
 (44, 28, 23, '2019-01-08 13:06:44', '2019-01-08 13:06:44'),
 (45, 28, 27, '2019-01-08 13:06:44', '2019-01-08 13:06:44'),
 (46, 28, 34, '2019-01-08 13:06:44', '2019-01-08 13:06:44'),
@@ -857,46 +856,20 @@ INSERT INTO `webpages` (`id`, `name`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure for view `view_main_category_companies` exported as a table
+-- Structure for view `view_main_category_companies`
 --
 DROP TABLE IF EXISTS `view_main_category_companies`;
-CREATE TABLE`view_main_category_companies`(
-    `id` int(10) unsigned NOT NULL DEFAULT '0',
-    `company_id` int(11) NOT NULL,
-    `subcategory_id` int(11) NOT NULL,
-    `created_at` timestamp DEFAULT NULL,
-    `updated_at` timestamp DEFAULT NULL,
-    `main_category_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
-);
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_main_category_companies`  AS  select `sub_category_companies`.`id` AS `id`,`sub_category_companies`.`company_id` AS `company_id`,`sub_category_companies`.`subcategory_id` AS `subcategory_id`,`sub_category_companies`.`created_at` AS `created_at`,`sub_category_companies`.`updated_at` AS `updated_at`,`sub_categories`.`main_category_id` AS `main_category_id` from (`sub_category_companies` left join `sub_categories` on((`sub_category_companies`.`subcategory_id` = `sub_categories`.`id`))) ;
 
 -- --------------------------------------------------------
 
 --
--- Structure for view `view_user_companies` exported as a table
+-- Structure for view `view_user_companies`
 --
 DROP TABLE IF EXISTS `view_user_companies`;
-CREATE TABLE`view_user_companies`(
-    `id` int(10) unsigned NOT NULL DEFAULT '0',
-    `company_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `facebook_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `website_url` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `description` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `location` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `google_map_lat` double DEFAULT NULL,
-    `google_map_lon` double DEFAULT NULL,
-    `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'free',
-    `vision_and_mission` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `what_we_do` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `why_join_us` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `verify` tinyint(1) NOT NULL DEFAULT '0',
-    `status` tinyint(1) NOT NULL DEFAULT '1',
-    `photo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'nologo.png',
-    `created_at` timestamp DEFAULT NULL,
-    `updated_at` timestamp DEFAULT NULL
-);
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_user_companies`  AS  select `companies`.`id` AS `id`,`companies`.`company_name` AS `company_name`,`companies`.`email` AS `email`,`companies`.`phone` AS `phone`,`companies`.`facebook_url` AS `facebook_url`,`companies`.`website_url` AS `website_url`,`companies`.`address` AS `address`,`companies`.`description` AS `description`,`companies`.`location` AS `location`,`companies`.`google_map_lat` AS `google_map_lat`,`companies`.`google_map_lon` AS `google_map_lon`,`companies`.`type` AS `type`,`companies`.`vision_and_mission` AS `vision_and_mission`,`companies`.`what_we_do` AS `what_we_do`,`companies`.`why_join_us` AS `why_join_us`,`companies`.`verify` AS `verify`,`companies`.`status` AS `status`,`companies`.`photo` AS `photo`,`companies`.`created_at` AS `created_at`,`companies`.`updated_at` AS `updated_at` from `companies` where ((`companies`.`verify` = 1) and (`companies`.`status` = 1)) ;
 
 --
 -- Indexes for dumped tables
@@ -1054,7 +1027,7 @@ ALTER TABLE `blogs`
 -- AUTO_INCREMENT for table `companies`
 --
 ALTER TABLE `companies`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `company_feedbacks`
@@ -1090,7 +1063,7 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `employee__companies`

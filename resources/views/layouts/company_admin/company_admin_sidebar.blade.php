@@ -1,6 +1,6 @@
 <div class="sidebar" data-color="purple" data-background-color="white" data-image="{{asset('images/admin_image//sidebar-1.jpg')}}">
     <div class="logo">
-        <a href="{{url('company_profile/'.$company_profile['id'])}}" target="_blank" class="simple-text logo-normal">
+        <a href="{{url('company_profile/'.$company_profile['id'])}}"  target="_blank" class="simple-text logo-normal @if($company_profile['verify']==0) disabled @endif">
             {{$company_profile['company_name']}}
         </a>
     </div>
