@@ -59,7 +59,7 @@
                     </h6>
                     <hr>
                     <p>
-                        {{$blog_data['description']}}
+                        {!!$blog_data['description']!!}
                     </p>
                     <ul class="list-inline">
                         <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>

@@ -35,7 +35,7 @@
     <div class="content">
         <div class="container-fluid">
             <div class="row" style="margin-top: -20px;">
-                <div class="scroll_well" style="position: fixed;max-width: 25%;z-index: 100;">
+                <div class="scroll_well" style="z-index: 100;width: 100%;">
                     <div class="card">
                         <div class="card-header card-header-primary">
                             <h4 class="card-title">Create Blog Post</h4>
@@ -47,15 +47,15 @@
                                 <input type="hidden" id="blog_id" value="0" name="blog_id">
                                 <div class="row">
                                     <div class="col-sm-12 imgUp">
-                                        <img id="image" class="imagePreview">
-                                        <label class="btn btn-primary">
+                                        <img id="image" class="imagePreview" style="max-width: 25%;">
+                                        <label class="btn btn-primary" style="max-width: 25%;">
                                             Upload<input type="file" onchange="displaySelectedPhoto('upload_photo','image')" id="upload_photo" name="photo" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
                                         </label>
                                     </div><!-- col-2 -->
                                     {{--<i class="fa fa-plus imgAdd"></i>--}}
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-12" style="max-width: 100%;">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Title</label>
                                             <input type="text" name="title" id="title" class="form-control">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-md-4"></div>
-                <div class="col-md-8">
+                <div class="col-md-12">
                    <div class="card">
                        <div class="card-body">
                            <table id="datatable">
@@ -181,6 +181,7 @@
                     processData: false,
                     success: function(result) {
                         console.log(result);
+                        $("#description").summernote('reset');
                         alert("Success");
                         load_data();
 
@@ -243,7 +244,22 @@
                     var data=data_list[index];
                     document.getElementById("image").src=data.photo_url;
                     $('#title').val(data.title);
-                    $('#description').val(data.description);
+                    //$('#description').val(data.description);
+                    $('#description').summernote({
+                        height : "150px",
+                        toolbar: [
+                        // [groupName, [list of button]]
+                        ['style', ['style','bold', 'italic', 'underline', 'clear','fontname','fontsize','paragraph']],
+                        ['font', ['strikethrough', 'superscript', 'subscript']],
+                        ['fontsize', ['fontsize']],
+                        ['color', ['color']],
+                        ['para', ['ul', 'ol', 'paragraph']],
+                        ['height', ['height']],
+                        ['view', ['fullscreen', 'codeview', 'help']],
+                    ],
+                    });
+                    $('#description').summernote('code',data.description);
+
                     $('#blog_id').val(data.id);
                     $('#btn_submit').html('Edit');
                 },
@@ -285,6 +301,17 @@
                 });
             }
 
+            // start summernote
+            $("#description").summernote({
+                height : "150px",
+                placeholder: 'Description',
+              });
+              $(document).on('click','.note-btn',function(){
+                $(".note-group-select-from-files label").text("Upload image");
+                $(".note-group-select-from-files label").attr('class','btn btn-primary');
+                $(".note-group-select-from-files label").attr("for","photo_summernote");
+                $(".note-group-select-from-files input:file").attr("id","photo_summernote");
+              });
 
         });
 

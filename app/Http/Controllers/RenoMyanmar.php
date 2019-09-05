@@ -11,8 +11,8 @@ namespace App\Http\Controllers;
 
 class RenoMyanmar
 {
-//    public static $domain_url="http://localhost/renomyanmar/public/";
-    public static $domain_url="http://www.renomyanmar.com/";
+   public static $domain_url="http://localhost/renomyanmar/public/";
+    // public static $domain_url="http://www.renomyanmar.com/";
 
 
 }

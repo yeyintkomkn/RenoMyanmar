@@ -183,7 +183,7 @@
             });
 
             var t=$("#datatable").DataTable({
-                "ordering": false,
+                {{-- "ordering": false, --}}
                 // "paging": false,
                 "bInfo" : false,
                 // "bPaginate": false,
@@ -215,12 +215,14 @@
                     var status_class="success";
                     var today = new Date();
 
+                    var status=data_list[i].status==="success"?'<button class="btn btn-sm btn-'+data_list[i].status+'">Active</button>':'<button class="btn btn-sm btn-'+data_list[i].status+'">TimeOver</button>'
+
                     t.row.add( [
                         (no++),
                         '<img src="'+data_list[i].photo_url+'" style="width: 100px;height: 100px;"></img>',
                         data_list[i].webpage_name,
                         data_list[i].start_date,
-                        '<button class="btn btn-sm btn-'+data_list[i].status+'">Status</button>',
+                        status,
                         data_list[i].end_date,
 
                         '<button class="btn btn-sm btn-danger" onclick="delete_list('+data_list[i].id+')">Delete</button>'

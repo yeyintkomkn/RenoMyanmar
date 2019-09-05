@@ -21,6 +21,8 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{url('demo/demo.css')}}" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- summer note -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
     @yield('css')
 </head>
 
@@ -91,6 +93,8 @@
 
 {{--my js file--}}
 <script src="{{url('js/function.js')}}"></script>
+<!-- summer note -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
 
 
 <script>

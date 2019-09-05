@@ -41,8 +41,8 @@ Route::get('about','Controller@about');
 Route::get('message','Controller@show_message');
 //*******************8
 Route::group(['middleware'=>['auth']],function(){
-//    company permission
-    Route::get('company/company_dashboard','EmployeeController@request_employee');
+//    company permission\
+     Route::get('company/company_dashboard','EmployeeController@request_employee');
 
 
     //********company feedback
